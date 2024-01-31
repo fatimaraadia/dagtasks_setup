@@ -1,3 +1,5 @@
+#Code by Fatima F Raadia - creating dags using the erdos_renyi_graph method
+
 import networkx as nx
 import random
 import matplotlib.pyplot as plt
@@ -109,12 +111,12 @@ def generateDAG(num_vertices, probability, output_file_path, image_file_path):
 
 
 # Example usage:
-#num_vertices = 5
-#probability = 0.3
-#output_file_path = 'dag_info.txt'
+num_vertices = 5
+probability = 0.3
+output_file_path = 'dag_info.txt'
 
-#dag = generateDAG(num_vertices,probability)
+dag = generateDAG(num_vertices,probability)
 
 # Visualize the DAG
-#nx.draw(dag, with_labels=True, font_weight='bold')
-#plt.show()
+nx.draw(dag, with_labels=True, font_weight='bold')
+plt.show()
